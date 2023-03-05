@@ -1,0 +1,825 @@
+<html dir="ltr" lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <title>Home</title>
+</head>
+
+<body class="select-none scroll-smooth">
+
+    <header class="sticky top-0 z-50 shadow-xl">
+        <div class="flex items-center justify-end bg-[#212330] px-4 py-1">
+            <ul class="flex items-center justify-center lg:justify-start gap-5 flex-wrap">
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" fill="currentColor" class="mr-1 bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">Exchanges</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">Wallets</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">Security</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">Interface</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">Help Center</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-right-fill text-[#5d637b]" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        <p class="text-[#01aeef] text-sm hover:text-[#00e1f6]">Contact Us</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex items-center justify-between bg-[#2a2b3d] h-20 px-7">
+            <a class="cursor-pointer">
+                <img src="../img/logo-top.png" alt="">
+            </a>
+            <svg id="hamIcon" xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="flex lg:hidden cursor-pointer text-white bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            <ul id="mobileMenu" class="z-50 transition-all duration-300 lg:flex items-center gap-8 text-white text-sm fixed lg:static inset-y-0 bg-[#191919] w-60 lg:w-auto lg:bg-transparent block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-x-lg lg:hidden py-3 text-[#686667] hover:text-white cursor-pointer transition-all duration-200 ml-auto" id="close" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+                <li class="lg:text-[#00e1f6] p-4 border-t border-[#202020] pb-2 lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:border-b lg:border-[#00e1f6] hover:text-white text-white">
+                    <a href="index.html">
+                        HOME
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t border-[#202020] pb-2 lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#features">
+                        FEATURES
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t pb-2 border-[#202020] lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#preview">
+                        PREVIEW
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t pb-2 border-[#202020] lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#programs">
+                        PROGRAMS
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] p-4 border-t pb-2 border-[#202020] lg:p-0 lg:border-t-0 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#team">
+                        TEAM
+                    </a>
+                </li>
+                <li class="lg:hover:text-[#00e1f6] border-t p-4 lg:p-0 border-[#202020] lg:border-t-0 pb-2 cursor-pointer transition-all duration-200 lg:hover:border-b lg:hover:border-[#00e1f6] hover:text-white text-[#686667] lg:text-white">
+                    <a href="#blog">
+                        BLOG
+                    </a>
+                </li>
+                <li class="loginBg font-bold bg-no-repeat border-t border-[#202020] lg:border-t-0 pr-36 lg:pr-0 lg:w-[106px] h-8 text-black transition-all duration-400 hover:text-white flex justify-center items-center cursor-pointer mb-1">
+                    <a>
+                        LOGIN
+                    </a>
+                </li>
+                <li class="signUpBg font-bold bg-no-repeat border-t border-[#202020] lg:border-t-0 pr-36 lg:pr-6 lg:w-32 h-11 text-black transition-all duration-400 hover:text-white flex justify-center items-center cursor-pointer mb-1">
+                    <a>
+                        SIGNUP
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="header" class="section1 -z-20 text-center bg-center pt-14 px-4 pb-60 lg:pb-32 bg-no-repeat bg-cover relative">
+        <h1 class="font-bold lg:text-3xl text-xl text-white">
+            CryptoView is a Cryptocurrency Portfolio Manager<br> & Multi-exchange Trading Platform
+        </h1>
+        <div class="flex items-center justify-center font-bold text-xl mt-1">
+            <p class="text-[#00e1f6]">One interface</p>
+            <p class="text-[#01aeef]">- all major exchanges</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 relative lg:mt-4 mt-8 w-full text-white">
+            <div class="relative">
+                <img src="../img/screen-balance.png" alt="" class="mt-11 lg:ml-32 mx-auto lg:block hidden">
+                <img src="../img/chart-removebg-preview.png" alt="" class="block lg:hidden mx-auto">
+                <p class="text-center font-bold xl:text-lg text-sm -mt-2">Get an automatic update of your portfolio balances.</p>
+            </div>
+            <div class="z-10 relative">
+                <img src="../img/screen-trading.png" alt="" class="mx-auto lg:block hidden">
+                <img src="../img/Capture-removebg-preview.png" alt="" class="block lg:hidden mx-auto">
+                <p class="text-center font-bold xl:text-lg text-sm -mt-2">Trade on multiple exchanges from a single secured interface. </p>
+            </div>
+            <div class="relative">
+                <img src="../img/screen-stats.png" alt="" class="mt-11 lg:-ml-20 mx-auto lg:block hidden">
+                <img src="../img/Capture-removebg-preview2.png" alt="" class="block lg:hidden mx-auto">
+                <p class="font-bold xl:text-lg text-sm -mt-2">Get an automatic update of your portfolio balances.</p>
+            </div>
+
+            <img src="../img/Tooltips.png" alt="" class="absolute hidden xl:block inset-x-0 z-20 -top-4 w-11/12 mx-auto">
+            <img src="../img/tooltips-tablet.png" alt="" class="absolute hidden lg:block xl:hidden inset-x-0 z-20 -top-4 w-7/12 mx-auto">
+
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 bg-[#14141c] absolute bottom-0 inset-x-0 w-full py-9 px-6 mt-6 border-[#008bf6] border-b-2">
+            <img src="../img/supported_exchanges_1.png" alt="">
+            <img src="../img/supported_exchanges_2.png" alt="">
+            <img src="../img/supported_exchanges_3.png" alt="">
+        </div>
+    </section>
+
+    <section id="section2" class="section2 xl:h-[410px] bg-[#2a2b3d] relative px-4">
+        <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-80 py-2 absolute -top-5 text-sm inset-x-0 mx-auto after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+            VIEW ALL SUPPORTED EXCHANGES
+        </a>
+        <div class="container mx-auto bg-cover bg-no-repeat bg-center h-full py-32">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-7 justify-between text-center text-white">
+                <div>
+                    <img src="../img/ico-security.png" alt="" class="block mx-auto">
+                    <p class="text-xl my-5 font-bold border-b border-[#0095eb] pb-3">Enhanced security standards</p>
+                    <p class="text-sm text-gray-300">
+                        CryptoView has done all necessary steps to secure users API keys and data by applying enterprise-grade security standards.
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/ico-funds.png" alt="" class="block mx-auto">
+                    <p class="text-xl my-5 font-bold border-b border-[#0095eb] pb-3">We never store your funds</p>
+                    <p class="text-sm text-gray-300">
+                        Our platform does not store customers funds and does not provide wallet services. Your funds will always remain secure in your exchange’s wallets.
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/ico-fees.png" alt="" class="block mx-auto">
+                    <p class="text-xl my-5 font-bold border-b border-[#0095eb] pb-3">No additional trading fees</p>
+                    <p class="text-sm text-gray-300">
+                        CryptoView does not charge any additional trading fees. For more information about our subscription model, please review our Pricing section.
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/ico-trading-volume.png" alt="" class="block mx-auto">
+                    <p class="text-xl my-5 font-bold border-b border-[#0095eb] pb-3">No trading volume limits</p>
+                    <p class="text-sm text-gray-300">
+                        There are no trading volume or transaction limits. You are free to trade as much as you require even during the Free trial period.
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/ico-privacy.png" alt="" class="block mx-auto">
+                    <p class="text-xl my-5 font-bold border-b border-[#0095eb] pb-3 xl:px-10">We respect your privacy</p>
+                    <p class="text-sm text-gray-300">
+                        CryptoView Does not share personal user’s data with third parties or data associated with user’s trading activity or funds.
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/ico-verify.png" alt="" class="block mx-auto">
+                    <p class="text-xl my-5 font-bold border-b border-[#0095eb] pb-3">No verification procedures</p>
+                    <p class="text-sm text-gray-300">
+                        While we don’t require any account verification process, users can optionally fill their account profile. CrypoView is fully compliant with GDPR.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features bg-[#2a2b3d] md:py-28 px-4 pt-60">
+        <div class="container mx-auto bg-cover bg-no-repeat bg-center">
+            <h1 class="text-white text-center text-4xl font-bold">FEATURES</h1>
+            <p class="text-center text-[#00e1f6] text-lg font-bold my-2">Core features & Integrated trading tools</p>
+            <p class="text-center text-gray-500 lg:w-1/3 w-full mx-auto">
+                Our advanced interface offers an all-in-one solution for cryptocurrency traders, professional fund managers and everyone in between.
+            </p>
+            <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                <div class="lg:text-right text-left">
+                    <p class="text-[#01a6f1] text-2xl">Multi-exchange trading</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full ml-auto mt-12">
+                        Synchronize your exchanges and wallets data while trading on multiple exchanges from a single secured account. Trading history and portfolio balances are automatically imported and updated, allowing you to review previous trades and track balances across
+                        all connected exchanges.
+                    </p>
+                </div>
+                <img src="../img/feature06.png" alt="" class="lg:ml-[-240px] mx-auto lg:-mt-7 w-[736px] hidden xl:block">
+                <img src="../img/feature01small.png" alt="" class="mt-4 xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+            </div>
+            <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                <img src="../img/feature-balance.png" alt="" class="ml-[240px] -mt-7 w-[736px]  hidden xl:block">
+                <img src="../img/feature02small.png" alt="" class="order-2 mt-6 xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+                <div class="text-left order-1">
+                    <p class="text-[#01a6f1] text-2xl">Portfolio tracking</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full mr-auto mt-12">
+                        Your portfolio balance aggregates balance data from all connected exchanges and wallets. We also support sub-accounts such as: Margin, Lending, Swap etc. In addition you can add and manage manual balance entries to represent offline wallets or cold storage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features bg-[#2a2b3d] py-28 px-4 -mt-52">
+        <div class="container mx-auto bg-cover bg-no-repeat bg-center">
+            <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                <div class="lg:text-right text-left">
+                    <p class="text-[#01a6f1] text-2xl">Multi-charting interface</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full ml-auto mt-12">
+                        Fully customizable multi-charting interface with real-time market data from all major crypto exchanges. You can simultaneously monitor prices of different currencies and use more than 75 technical indicators and drawing tools.
+                    </p>
+                </div>
+                <img src="../img/feature04.png" alt="" class="ml-[-240px] -mt-7 w-[736px] hidden xl:block">
+                <img src="../img/feature03small.png" alt="" class="mt-5 xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+
+            </div>
+            <div class="grid xl:grid-cols-2 grid-cols-1 mt-24">
+                <img src="../img/feature03.png" alt="" class="lg:ml-[286px] lg:-mt-7 w-[736px] hidden xl:block">
+                <img src="../img/feature04small.png" alt="" class="mt-5 order-2 xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+
+                <div class="text-left order-1">
+                    <p class="text-[#01a6f1] text-2xl">Multi-portfolio manager</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full mr-auto mt-12">
+                        Manage multiple portfolios and share them with colleagues and clients. Each portfolio provides detailed list of crypto assets and various performance indicators. You can edit past statistical data and manually input balance entries in each portfolio.
+                        You can also receive automated portfolio reports by email.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features bg-[#2a2b3d] py-28 px-4 -mt-52">
+        <div class="container mx-auto bg-cover bg-no-repeat bg-center">
+            <div class="grid xl:grid-cols-2 grid-cols-1 gap-4 lg:gap-0 mt-24">
+                <div class="lg:text-right text-left">
+                    <p class="text-[#01a6f1] text-2xl">Advanced trade orders</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full ml-auto mt-12">
+                        “Stop” and “Stop-Limit” are advanced order types that help you protect your capital from higher losses when price suddenly falls.
+                    </p>
+                </div>
+                <img src="../img/feature02.png" alt="" class="lg:ml-[-240px] lg:-mt-7 w-[736px] hidden xl:block">
+                <img src="../img/feature5small.png" alt="" class="xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+            </div>
+            <div class="grid xl:grid-cols-2 grid-cols-1 gap-4 lg:gap-0 mt-24">
+                <img src="../img/feature07.png" alt="" class="lg:ml-[286px] lg:-mt-8 w-[736px] hidden xl:block">
+                <img src="../img/feature06small.png" alt="" class="mt-5 order-2 xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+                <div class="text-left order-1">
+                    <p class="text-[#01a6f1] text-2xl">Smart trading panel</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full mr-auto mt-12">
+                        Out smart trading panel combines flexible field calculations, order depth indicator and other smart features to help you place your orders with ease.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features bg-[#2a2b3d] py-28 -mt-96 px-4">
+        <div class="container mx-auto bg-cover bg-no-repeat bg-center">
+            <div class="grid xl:grid-cols-2 grid-cols-1 gap-4 lg:gap-0 mt-24 py-48">
+                <div class="lg:text-right text-left">
+                    <p class="text-[#01a6f1] text-2xl">Market scanner</p>
+                    <p class="text-gray-400 text-base xl:w-1/2 w-full ml-auto mt-12">
+                        Compare various performance indicators for 10,000+ markets across all supported exchanges and quickly find trading opportunities.
+                    </p>
+                </div>
+                <img src="../img/feature07-1.png" alt="" class="lg:ml-[-240px] lg:-mt-7 w-[736px] hidden xl:block">
+                <img src="../img/feature07_noline.png" alt="" class="xl:ml-[-240px] mx-auto xl:-mt-7 w-[736px] block xl:hidden">
+            </div>
+        </div>
+    </section>
+
+    <section id="preview" class="preview bg-[#2a2b3d] -mt-24 py-12 px-4">
+        <h1 class="text-white text-center text-4xl font-bold">PREVIEW</h1>
+        <p class="text-center text-[#00e1f6] text-lg font-bold my-2">Fully Customizable & Responsive Interface</p>
+        <p class="text-center text-gray-500 md:w-1/3 w-full mx-auto">
+            An all-in-one crypto trading platform with attention to function and detail.
+        </p>
+        <div class="relative mt-8 px-8">
+            <img src="../img/computer-over.png" class="absolute inset-0 mx-auto z-10 xl:w-9/12 lg:h-[567px] h-80">
+            <!-- Swiper -->
+            <div class="swiper mySwiper lg:h-[599px] h-96">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/screen-balance.png" class="lg:h-[567px] h-80 lg:w-[800px] w-96 mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/screen-stats.png" class="lg:h-[567px] h-80 lg:w-[800px] w-96 mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/screen-trading.png" class="lg:h-[567px] h-80 lg:w-[800px] w-96 mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/screen-balance.png" class="lg:h-[567px] h-80 lg:w-[800px] w-96 mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/screen-stats.png" class="lg:h-[567px] h-80 lg:w-[800px] w-96 mx-auto" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/screen-trading.png" class="lg:h-[567px] h-80 lg:w-[800px] w-96 mx-auto" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="programs bg-no-repeat bg-cover bg-center py-24">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 justify-center">
+                <div class="bg-no-repeat bg-cover py-12 w-[409px] h-[505px] pt-24 mx-auto">
+                    <p class="text-center text-white font-bold text-4xl">
+                        AFFILIATE<br> PROGRAM
+                    </p>
+                    <img src="../img/affiliate-gfx.png" alt="" class="block mx-auto mt-2">
+                    <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-60 py-2 text-sm inset-x-0 mx-auto relative mt-5 after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+                        READ MORE
+                    </a>
+                </div>
+                <div class="bg-no-repeat bg-cover py-12 w-[409px] h-[505px] pt-24 mx-auto">
+                    <p class="text-center text-white font-bold text-4xl">
+                        REFERRAL<br> PROGRAM
+                    </p>
+                    <img src="../img/referral-gfx.png" alt="" class="block mx-auto mt-2">
+                    <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-60 py-2 text-sm inset-x-0 mx-auto relative mt-5 after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+                        READ MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team bg-[#2a2b3d] py-32 px-4 bg-contain bg-bottom">
+        <div class="container mx-auto">
+            <h1 class="text-white text-center text-4xl font-bold">THE TEAM</h1>
+            <p class="text-center text-[#00e1f6] text-lg font-bold my-2">Get to know us!</p>
+            <p class="text-center text-gray-500 md:w-2/3 w-full mx-auto text-lg">
+                We are a team of creative individuals with trading, business and software engineering backgrounds, joined together with a mission to create a better environment for the multi-exchange cryptocurrency traders. Through our service, we wish to contribute
+                to the widespread crypto adoption and to the community in general.
+            </p>
+            <div class="grid lg:grid-cols-6 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-7 mt-16">
+                <div>
+                    <img src="../img/7.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        Angel Vladov
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:left-0 before:bg-[#00e1f6]">
+                        UI Architect
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/8.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        Denica Dobreva
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:left-0 before:bg-[#00e1f6]">
+                        Project Coordinator
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/9.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        Dimitar Kerenski
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:left-0 before:bg-[#00e1f6]">
+                        Web Developer
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/10.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        Nikolay Kerenski
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:left-0 before:bg-[#00e1f6]">
+                        Web Developer
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/11.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        Nikolay Markov
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:left-0 before:bg-[#00e1f6]">
+                        Cloud Architecture
+                    </p>
+                </div>
+                <div>
+                    <img src="../img/12.jpg" alt="" class="block mx-auto">
+                    <p class="text-white my-2 text-xl font-bold">
+                        Iliyan Petrov
+                    </p>
+                    <p class="text-gray-500 relative before:absolute before:w-16 before:h-0.5 before:-bottom-4 before:left-0 before:bg-[#00e1f6]">
+                        Legal
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="px-4 bg-[#2a2b3d] py-32 blog bg-no-repeat bg-cover bg-center">
+        <div class="container mx-auto">
+            <h1 class="text-white text-center text-4xl font-bold">BLOG</h1>
+            <p class="text-center text-[#00e1f6] text-lg font-bold my-2">CryptoView | Cryptocurrency Portfolio Manager & Multi-trading platform</p>
+            <p class="text-center text-gray-500 md:w-2/3 w-full mx-auto text-lg">
+                Announcements, Educational Materials and More ...
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 mt-20">
+                <div>
+                    <div class="bg-white p-2">
+                        <img src="../img/blog_featured_image.jpg" alt="" class="block w-full">
+                        <p class="text-[#01a6f1] p-3 text-2xl">
+                            Cryptocurrency exchange Crypto.com is now fully integrated for Charting, Portfolio Balance and Spot trading.
+                        </p>
+                        <p class="text-gray-500 p-3">
+                            We are excited to announce the integration of Crypto.com for charting, balance tracking and spot trading. In addition to cryptocurrency exchange, Crypto.com also offers a variety of crypto related services.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-2">
+                        <img src="../img/crypto_exchanges_trading.jpg" alt="" class="block w-full">
+                        <p class="text-[#01a6f1] p-3 text-2xl">
+                            Cryptocurrency exchanges Okex, Cex, HitBTC and Bittrex are now available for spot trading in CryptoView!
+                        </p>
+                        <p class="text-gray-500 p-3">
+                            We are excited to announce the integration of Okex, Cex, HitBTC and Bittrex for spot trading. Among other features and improvement, out team is also working on the full integration of Crypto.com
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-2">
+                        <img src="../img/kucoin_blog_featured.jpg" alt="" class="block w-full">
+                        <p class="text-[#01a6f1] p-3 text-2xl">
+                            KuCoin upgraded the API key to V2.0. CryptoView users should update to V2.0 as API V1 is no longer supported.
+                        </p>
+                        <p class="text-gray-500 p-3">
+                            Cryptocurrency exchange KuCoin upgraded the API key to version 2.0. V1 API key will stay valid until May 1, 2021 (UTC+8) and KuCoin will no longer support it after that. CryptoView users should upgrade their API key to V2 ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="hover:text-white cursor-pointer before:absolute before:w-6 before:h-6 before:border-4 before:rotate-45 before:border-[#008bf6] before:bg-[#008bf6] before:-left-3 before:top-[6px] flex justify-center items-center bg-[#008bf6] font-bold w-60 py-2 text-sm inset-x-0 mx-auto relative mt-8 after:absolute after:w-6 after:h-6 after:border-4 after:rotate-45 after:border-[#008bf6] after:bg-[#008bf6] after:-right-3 after:top-[6px]">
+                VIEW ALL BLOG POSTS
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-[#2a2b3d]">
+        <div class="container mx-auto bg-center bg-cover py-9 px-4">
+            <div class="grid grid-cols-12 gap-9 lg:gap-1">
+                <div class="lg:col-span-3 col-span-12">
+                    <img src="../img/logo-top.png" alt="">
+                    <p class="text-gray-300 p-4 lg:pr-20">
+                        <span class="font-bold">CryptoView</span> is an all-in-one cryptocurrency portfolio manager and trading platform.
+                    </p>
+                    <div class="flex items-center">
+                        <a class="cursor-pointer hover:opacity-80">
+                            <img src="../img/button-blue02.png" alt="">
+                        </a>
+                        <a class="cursor-pointer hover:opacity-80">
+                            <img src="../img/button-signup02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mt-5">
+                        <p class="text-gray-600 text-xs">COMING SOON ON:</p>
+                        <img src="../img/stores.png" alt="" class="mt-2">
+                    </div>
+                </div>
+                <div class="lg:col-span-6 col-span-12">
+                    <div class="grid md:grid-cols-2 grid-cols-1 gap-6 lg:gap-1">
+                        <div>
+                            <h2 class="text-[#01a6f1]">Quick Navigation</h2>
+                            <img src="../img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            HOME
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            FEATURES
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            SCREENSHOTS
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            AFFILIATE & REFERRAL
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            TEAM
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            BLOG
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <img src="../img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            SUPPORTED EXCHANGES
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            SUPPORTED WALLETS
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            SECURITY
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            INTERFACE
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            HELP CENTER
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            CONTACT US
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-[#01a6f1]">Legal documents</h2>
+                            <img src="../img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            TERMS OF SERVICE
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            PRIVACY POLICY
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            SECURITY POLICY
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            REFERRAL TERMS
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            AFFILIATE TERMS
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            COOKIES POLICY
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h2 class="text-[#01a6f1] mt-5">CryptoView Programs</h2>
+                            <img src="../img/line.png" alt="" class="my-3">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            AFFILIATE
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1 text-[#00e1f6] bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                          </svg>
+                                        <p>
+                                            REFERRAL
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3 col-span-12">
+                    <div class="bg-[#191c23] py-3 lg:w-[279px] w-full mx-auto">
+                        <div class="mx-auto w-3/4">
+                            <h2 class="text-gray-500">Legal documents</h2>
+                            <img src="../img/line.png" alt="" class="my-4">
+                            <ul class="text-gray-500">
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <img src="../img/ico-question.png" alt="" class="mr-2">
+                                        <p>
+                                            What is Cryptocurrency?
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <img src="../img/ico-question.png" alt="" class="mr-2">
+                                        <p>
+                                            What is Bitcoin / Altcoins?
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="flex items-center cursor-pointer hover:text-[#00e1f6]">
+                                        <img src="../img/ico-question.png" alt="" class="mr-2">
+                                        <p>
+                                            Security and Safety Tips
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="mx-auto block my-9">
+                        <img src="../img/button-marketing.png" alt="" class="mx-auto cursor-pointer border border-transparent hover:border-[#00e1f6]">
+                    </a>
+                    <div class="flex items-center justify-center gap-3">
+                        <a>
+                            <img src="../img/ico-fb.svg" alt="" class="w-10 hover:opacity-80">
+                        </a>
+                        <a>
+                            <img src="../img/ico-tw.svg" alt="" class="w-10 hover:opacity-80">
+                        </a>
+                        <a>
+                            <img src="../img/ico-yt.svg" alt="" class="w-10 hover:opacity-80">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-black py-7">
+            <div class="mx-auto container">
+                <p class="text-gray-500 text-sm text-center lg:text-left">
+                    Copyrights © 2022 CryptoView.com. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <a href="#header" class="fixed bottom-9 cursor-pointer font-bold right-12 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-chevron-up text-[#01a6f1]" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </a>
+
+
+    <script src="../js/script.js "></script>
+    <script src="../js/swiper-bundle.min.js "></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/css/app.css -o ./src/css/output.css --watch -->
